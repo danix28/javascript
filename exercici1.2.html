@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var nota1 = prompt("Introduiex la nota 1:");    
+      var nota2 = prompt("Introduiex la nota 2:");
+      var nota3 = prompt("Introduiex la nota 3:");
+      var notafinal= (parseFloat(nota1)+parseFloat(nota2)+parseFloat(nota3))/3;
+     
+      if (notafinal<5){
+        document.write(" la teva nota final es "+notafinal.toFixed(2)+", has tret un Insuficient"); 
+      } else if (notafinal>=5 && notafinal<6){
+        document.write(" la teva nota final es "+notafinal.toFixed(2)+", has tret un Suficient");
+      } else if (notafinal>=6 && notafinal<7){
+        document.write(" la teva nota final es "+notafinal.toFixed(2)+", has tret un Be");
+      } else if (notafinal>=7 && notafinal<9){
+        document.write(" la teva nota final es "+notafinal.toFixed(2)+", has tret un Notable");
+      } else {
+        document.write(" la teva nota final es "+notafinal.toFixed(2)+", has tret un Exel.lent");
+      }
+  </script>
+</body>
+</html>

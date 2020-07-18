@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position:fixed;
+            width:50px;
+            height:50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        
+        
+        for (i=1;i<=2000;i++){
+            var x=Math.floor(Math.random()*1920);  
+            var y=Math.floor(Math.random()*1080);
+            var R=Math.floor(Math.random()*255);
+            var G=Math.floor(Math.random()*255);
+            var B=Math.floor(Math.random()*255);
+            document.write('<div style="left:'+x+'px; top:'+y+'px; background-color:rgb('+R+','+G+','+B+')"></div>');
+        }
+    </script>
+</body>
+</html>
