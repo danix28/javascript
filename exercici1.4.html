@@ -18,12 +18,12 @@
         
         
         for (i=1;i<=2000;i++){
-            var x=Math.floor(Math.random()*1920);  
-            var y=Math.floor(Math.random()*1080);
+            var x=Math.floor(Math.random()*100);  
+            var y=Math.floor(Math.random()*100);
             var R=Math.floor(Math.random()*255);
             var G=Math.floor(Math.random()*255);
             var B=Math.floor(Math.random()*255);
-            document.write('<div style="left:'+x+'px; top:'+y+'px; background-color:rgb('+R+','+G+','+B+')"></div>');
+            document.write('<div style="left:'+x+'%; top:'+y+'%; background-color:rgb('+R+','+G+','+B+')"></div>');
         }
     </script>
 </body>
